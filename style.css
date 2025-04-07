@@ -1,0 +1,477 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    color:white;
+    font-size: 18px;
+}
+
+body {
+    background: linear-gradient(to right, rgb(0, 60, 255), violet);
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 20px 10px;
+    background-color:transparent;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(245, 243, 243, 0.5);
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    margin-right: 50px;
+    width: 100%;
+}
+
+.navbar .a1 {
+    margin-right: auto;
+}
+
+.navbar .a1 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.navbar a{
+    font-size: 20px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 50;
+    margin-left: 25px;
+    transition: .10s;
+}
+
+.navbar a:hover, .navbar a.active{
+    color: #000;
+}
+
+h2 {
+    text-align: center;
+    color: #f0f0f0;
+}
+
+.web, .web p {
+    margin: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.web-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(245, 243, 243, 0.5);
+    border-radius: 20px;
+    width: 350px;
+    margin: 10px;
+}
+
+.web-img p {
+    margin: 10px;
+}
+
+.web-img .img1, .img2, .img3, .img4, .img5,
+.img6, .img7, .img8, .img9 {
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    width: 320px;
+    height: 200px;
+    border: none;
+    border-radius: 20px;
+}
+
+.img1 {
+    background-image: url('img/window/a.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    animation: window 20s ease-in-out 10s alternate-reverse infinite;
+}
+
+@keyframes window {
+    0% {
+        background-image: url('img/window/b.jpg');
+    }
+
+    40% {
+        background-image: url('img/window/c.jpg');
+    }
+
+    80% {
+        background-image: url('img/window/d.jpg');
+    }
+
+    100% {
+        background-image: url('img/window/d.png');
+    }
+}
+
+.img2 {
+    background-image: url('img/office/a.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    animation: microsoft 20s ease-in-out 10s alternate-reverse infinite;
+}
+
+@keyframes microsoft {
+    0% {
+        background-image: url('img/office/b.png');
+    }
+
+    40% {
+        background-image: url('img/office/c.jpg');
+    }
+
+    80% {
+        background-image: url('img/office/d.jpg');
+    }
+
+    100% {
+        background-image: url('img/office/f.png');
+    }
+}
+
+.img3 {
+    background-image: url('img/power/d.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    animation: power 20s ease-in-out 10s alternate-reverse infinite;
+}
+
+@keyframes power {
+    0% {
+        background-image: url('img/power/a.jpg');
+    }
+
+    40% {
+        background-image: url('img/power/b.jpg');
+    }
+
+    80% {
+        background-image: url('img/power/c.png');
+    }
+
+    100% {
+        background-image: url('img/power/b.png');
+    }
+}
+
+.img4 {
+    background-image: url('img/display/a.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    animation: display 20s ease-in-out 10s alternate-reverse infinite;
+}
+
+@keyframes display {
+    0% {
+        background-image: url('img/display/a.png');
+    }
+
+    40% {
+        background-image: url('img/display/b.jpg');
+    }
+
+    80% {
+        background-image: url('img/display/d.jpg');
+    }
+
+    100% {
+        background-image: url('img/display/m.jpg');
+    }
+}
+
+.img5 {
+    background-image: url('img/sound/b.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    animation: sound 20s ease-in-out 10s alternate-reverse infinite;
+}
+
+@keyframes sound {
+    0% {
+        background-image: url('img/sound/a.png');
+    }
+
+    40% {
+        background-image: url('img/sound/c.png');
+    }
+
+    80% {
+        background-image: url('img/sound/d.png');
+    }
+
+    100% {
+        background-image: url('img/sound/e.jpg');
+    }
+}
+
+.img6 {
+    background-image: url('img/pasword/a.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    animation: password 20s ease-in-out 10s alternate-reverse infinite;
+}
+
+@keyframes password {
+    0% {
+        background-image: url('img/pasword/a.png');
+    }
+
+    40% {
+        background-image: url('img/pasword/b.jpg');
+    }
+
+    80% {
+        background-image: url('img/pasword/c.jpg');
+    }
+
+    100% {
+        background-image: url('img/pasword/d.jpg');
+    }
+}
+
+.img7 {
+    background-image: url('img/iphonesamsang/a.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    animation: iphonesamsang 20s ease-in-out 10s alternate-reverse infinite;
+}
+
+@keyframes iphonesamsang {
+    0% {
+        background-image: url('img/iphonesamsang/b.jpg');
+    }
+
+    40% {
+        background-image: url('img/iphonesamsang/c.jpg');
+    }
+
+    80% {
+        background-image: url('img/iphonesamsang/d.jpg');
+    }
+
+    100% {
+        background-image: url('img/iphonesamsang/e.jpg');
+    }
+}
+
+.img8 {
+    background-image: url('img/gmailpro/d.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    animation: gmailpro 20s ease-in-out 10s alternate-reverse infinite;
+}
+
+@keyframes gmailpro {
+    0% {
+        background-image: url('img/gmailpro/a.png');
+    }
+
+    20% {
+        background-image: url('img/gmailpro/e.png');
+    }
+
+    40% {
+        background-image: url('img/gmailpro/c.png');
+    }
+
+    80% {
+        background-image: url('img/gmailpro/b.png');
+    }
+
+    100% {
+        background-image: url('img/gmailpro/e.jpg');
+    }
+}
+
+.img9 {
+    background-image: url('img/mobile/a.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    animation: mobile 20s ease-in-out 10s alternate-reverse infinite;
+}
+
+@keyframes mobile {
+    0% {
+        background-image: url('img/mobile/a.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    10% {
+        background-image: url('img/mobile/h.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    20% {
+        background-image: url('img/mobile/e.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    30% {
+        background-image: url('img/mobile/i.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    40% {
+        background-image: url('img/mobile/b.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    50% {
+        background-image: url('img/mobile/k.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    60% {
+        background-image: url('img/mobile/f.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    70% {
+        background-image: url('img/mobile/l.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    80% {
+        background-image: url('img/mobile/c.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    90% {
+        background-image: url('img/mobile/g.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    100% {
+        background-image: url('img/mobile/d.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.webb, .webb p {
+    margin: 20px;
+}
+
+strong {
+    color: #000;
+}
+
+.contact {
+    margin: 20px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.contact a {
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: #f0f0f0;
+    opacity: 1;
+}
+
+.contact a:hover {
+    opacity: 0.5;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(248, 237, 237, 0.5);
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 100px 30px 100px;
+}
+
+.logo-container img{
+    border-radius: 100px 30px 100px;
+    width: 300px;
+    height: 300px;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 23px;
+    font-weight: 900;
+    font-family: arial;
+    color: rgba(252, 247, 247, 0.164);
+}
+
+.logo-container img:hover {
+    color: rebeccapurple;
+}
+
+.background-video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}

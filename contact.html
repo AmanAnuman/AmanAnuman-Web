@@ -1,0 +1,81 @@
+<!-- Contact Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" href="img/otherimg/Mylogo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="http://i-am.infy.uk" class="active">Contact</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+    <section>
+        <form action="send_message.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder=" your name">
+
+            <label for="email">Phone:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="phone number">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Email address">
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="What about you want to say">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required placeholder="Type the information which you want to send to me"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <table>
+                <caption>Just do a one click to reach me</caption>
+                <tr>
+                    <th>Phone No.</th>
+                    <th>Email Address</th>
+                </tr>
+
+                <tr>
+                    <td><a href="tel:+255763058600">+255763058600</a></td>
+                    <td><a href="mailto:rainhald.erk.0@gmail.com">Email 01</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="tel:+255618058600">+255618058600</a></td>
+                    <td><a href="mailto:amananuman600@gmail.com">Email 02</a></td>
+                </tr>
+
+                <tr>
+                    <th>Follow Me Via</th>
+                    <td><a href="http://">whatssap</a> or <a href="mailto:rainhald.erk.0@gmail.com">Email</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <script>
+        // Check URL parameters for status messages
+        const urlParams = new URLSearchParams(window.location.search);
+        const status = urlParams.get('status');
+    
+        if (status === 'success') {
+            alert('✅🤝Message sent successfully!');
+        } else if (status === 'error') {
+            alert('❌‼️Error sending message. Please try again.');
+        }
+    </script>
+    <video class="background-video" autoplay loop>
+        <source src="video/a.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
+

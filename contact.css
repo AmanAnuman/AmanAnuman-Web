@@ -1,0 +1,148 @@
+/* General Styles */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background: linear-gradient(to right, rgb(0, 60, 255), violet);
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 20px 10px;
+    background-color:transparent;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    margin-right: 50px;
+    width: 100%;
+}
+
+.navbar a{
+    font-size: 20px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 50;
+    margin-left: 25px;
+    transition: .10s;
+}
+
+.navbar a:hover, .navbar a.active{
+    color: #000;
+}
+
+section {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Contact Page Styles */
+form {
+    background: transparent;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+label {
+    color: #000;
+}
+textarea  {
+    height: 100px;
+    line-height: 25px;
+}
+button {
+    background: #000;
+    color: #f0f0f0;
+    padding: 10px 15px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 1;
+}
+button:hover {
+    background: #000;
+    color: #1707f7;
+    opacity: 0.5;
+}
+.contact-info p {
+    margin: 20px;
+    font-size: 16px;
+}
+
+.contact-info p a {
+    color: #000;
+    text-decoration: none;
+}
+
+.contact-info p small {
+    padding-left: 55px;
+}
+
+::placeholder {
+    color: #f0f0f080;
+}
+
+.background-video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    height: auto;
+    color: white;
+    border: 2px solid #f0f0f0;
+}
+
+th, td {
+    border: 2px solid;
+    padding: 5px;
+    font-size: 18px;
+    word-wrap:break-word;
+}
+
+td a {
+    color: purple;
+    text-decoration: none;
+}
+
+td a:hover {
+    color: red;
+}
+
