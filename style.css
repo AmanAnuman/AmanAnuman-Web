@@ -109,7 +109,7 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    animation: window 20s ease-in-out 10s alternate-reverse infinite;
+    animation: window 64s ease-in-out 10s alternate-reverse infinite;
 }
 
 @keyframes window {
@@ -136,7 +136,7 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    animation: microsoft 20s ease-in-out 10s alternate-reverse infinite;
+    animation: microsoft 64s ease-in-out 10s alternate-reverse infinite;
 }
 
 @keyframes microsoft {
@@ -163,7 +163,7 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    animation: power 20s ease-in-out 10s alternate-reverse infinite;
+    animation: power 64s ease-in-out 10s alternate-reverse infinite;
 }
 
 @keyframes power {
@@ -190,7 +190,7 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    animation: display 20s ease-in-out 10s alternate-reverse infinite;
+    animation: display 64s ease-in-out 10s alternate-reverse infinite;
 }
 
 @keyframes display {
@@ -217,7 +217,7 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    animation: sound 20s ease-in-out 10s alternate-reverse infinite;
+    animation: sound 64s ease-in-out 10s alternate-reverse infinite;
 }
 
 @keyframes sound {
@@ -244,7 +244,7 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    animation: password 20s ease-in-out 10s alternate-reverse infinite;
+    animation: password 64s ease-in-out 10s alternate-reverse infinite;
 }
 
 @keyframes password {
@@ -271,7 +271,7 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    animation: iphonesamsang 20s ease-in-out 10s alternate-reverse infinite;
+    animation: iphonesamsang 64s ease-in-out 10s alternate-reverse infinite;
 }
 
 @keyframes iphonesamsang {
@@ -298,7 +298,7 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    animation: gmailpro 20s ease-in-out 10s alternate-reverse infinite;
+    animation: gmailpro 64s ease-in-out 10s alternate-reverse infinite;
 }
 
 @keyframes gmailpro {
@@ -329,7 +329,7 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    animation: mobile 20s ease-in-out 10s alternate-reverse infinite;
+    animation: mobile 64s ease-in-out 10s alternate-reverse infinite;
 }
 
 @keyframes mobile {
